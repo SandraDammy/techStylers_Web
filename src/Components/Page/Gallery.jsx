@@ -64,7 +64,7 @@ const Gallery = () => {
             <MdOutlineKeyboardArrowUp className={style.icon} />
           </div>
           <div>
-            <a href="#" className={style.seeLink}>
+            <a href="/gallery" className={style.seeLink}>
               See All
             </a>
           </div>
@@ -115,7 +115,7 @@ const Gallery = () => {
             <MdOutlineKeyboardArrowUp className={style.icon} />
           </div>
           <div>
-            <a href="#" className={style.seeLink}>
+            <a href="/gallery" className={style.seeLink}>
               See All
             </a>
           </div>
