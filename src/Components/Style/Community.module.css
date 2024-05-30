@@ -1,0 +1,102 @@
+/* Community.module.css */
+.container {
+    display: flex;
+    /* align-items: center; */
+    padding: 5rem 5rem;
+    justify-content: space-between;
+    gap: 3rem;
+    background-color: var(--white-color);
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer img {
+    width: 517px;
+    transform: translateX(-100%); /* Start off-screen to the left */
+    transition: transform 1s ease-out;
+    overflow: hidden;
+}
+
+.imgContainer img.active {
+    transform: translateX(0); /* Slide into position */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.textContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: var(TS-Black);
+    gap: 1.5rem;
+}
+
+.textContainer h1 {
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    transform: translateY(-100%); /* Start above its position */
+    transition: all 0.8s ease-in; 
+}
+
+.textContainer h1.active {
+    transform: translateX(0) translateY(0); 
+    opacity: 1;
+}
+
+.textContainer p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    transform: translateX(100%); /* Start from the right */
+    transition: all 0.8s ease-in;
+    opacity: 0;
+    text-align: justify;
+}
+
+.textContainer p.active {
+    transform: translateX(0); /* Move into position */
+    opacity: 1;
+}
+ /*Start below its position*/
+/* .readme p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    transform: translateY(100%);
+    transition: all 0.8s ease-in; 
+} */
+
+.readme p.active {
+    transform: translateX(0) translateY(0); /* Move into position */
+    opacity: 1;
+}
+
+@media(max-width:968px){
+    .container{
+        flex-direction: column;
+    }
+    .imgContainer{
+       justify-content: center;
+       margin: 0;
+    }
+    .imgContainer img{
+        max-width: 25em;
+    }
+    .textContainer{
+        margin: 0 auto;
+    }
+    .textContainer h1{
+        font-size: 2em;
+    }
+}

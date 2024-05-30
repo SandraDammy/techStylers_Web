@@ -1,0 +1,172 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  background-color: var(--secondary-bg);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  padding-top: 5rem;
+  gap: 2rem;
+  width: 60%;
+}
+
+.title {
+  color: var(--TS-Black, #373435);
+  font-size: 67px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 79px;
+}
+
+span {
+  color: var(--secondary-color);
+}
+
+.desc {
+  color: var(--TS-Black);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 2rem;
+}
+/* .textTitle {
+  width: 100%;
+} */
+.btnJoin {
+  width: 20%;
+}
+.imgContainer {
+  display: flex;
+  width: 40%;
+  padding: 76px 0px 76px 45px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background: var(--tertiary-bg);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-radius: 0px 0px 0px 60px;
+}
+
+.heroImg {
+  flex: 1 0 0;
+  align-self: stretch;
+  max-width: 100%;
+  border-radius: 15px;
+  display: flex;
+  gap: 1.3rem;
+  overflow: hidden;
+}
+
+.logo {
+  width: 294px;
+  height: 429px;
+  transition: 1s ease-in-out;
+}
+
+.bigTxt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  color: var(--TS-Black, #373435);
+}
+
+.big {
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.txt {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+/* For smaller devices like tablets */
+@media (max-width: 968px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 0 2em;
+    gap: 2em;
+    background-color: var(--secondary-bg);
+    overflow-x: hidden;
+  }
+  .imgContainer, .heroImg, .heroImg img{
+    display: none;
+  }
+  .textContainer{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .btnJoin{
+    margin: 0 auto;
+    width: 50%;
+  }
+  .bigTxt{
+    margin: 5rem 0;
+    justify-content:center;
+  }
+  
+}
+@media (max-width:480px){
+  .bigTxt{
+    flex-wrap:wrap;
+    gap:1em;
+    margin: 4rem auto;
+   }
+   .bigTxt div .big{
+    font-size: 1em;
+   }
+   .bigTxt div .txt{
+    font-size: .5em;
+   }
+   .title{
+    font-size: 3em;
+    line-height: 1.4em;
+   }
+   .btnJoin{
+    margin: 0;
+    width: 50%;
+}
+   .textContainer{
+    justify-content:center;
+   }
+}
+/* For even smaller devices like smartphones */
+@media (max-width: 480px) {
+     html{
+      font-size: 80%;
+     }
+     .bigTxt{
+      flex-wrap:wrap;
+      gap:1em;
+      margin: 2rem auto;
+     }
+     .bigTxt div .big{
+      font-size: 1.5em;
+     }
+     .bigTxt div .txt{
+      font-size: 1em;
+     }
+     .title{
+      font-size: 3em;
+      line-height: 1.4em;
+     }
+     .btnJoin{
+      margin: 0;
+      width: 50%;
+      margin-left: 2.2em;
+}
+     .textContainer{
+      justify-content:center;
+     }
+}
