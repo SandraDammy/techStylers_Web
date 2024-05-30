@@ -58,7 +58,7 @@ jobs:
       
       # Uncomment the next section if you need to build your project (e.g., React, Angular, etc.)
       - name: Build Project
-       run: npm run build --if-present
+        run: npm run build --if-present
 
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
