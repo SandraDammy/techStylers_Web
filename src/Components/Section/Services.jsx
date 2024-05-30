@@ -24,6 +24,7 @@ const Services = () => {
             <a
               href="https://www.youtube.com/@techstylers1285"
               target="_blank"
+              rel="noreferrer"
               className={style.youtube}
             >
               Read More...
@@ -44,6 +45,7 @@ const Services = () => {
             <a
               href="https://www.youtube.com/@techstylers1285"
               target="_blank"
+              rel="noreferrer"
               className={style.youtube}
             >
               Read More...
@@ -64,6 +66,7 @@ const Services = () => {
             <a
               href="https://www.youtube.com/@techstylers1285"
               target="_blank"
+              rel="noreferrer"
               className={style.youtube}
             >
               Read More...

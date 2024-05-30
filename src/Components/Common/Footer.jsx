@@ -116,23 +116,23 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/company/techstylers/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
               >
-              <img src={linkedin} alt="Linkedin" width="40px" />
+                <img src={linkedin} alt="Linkedin" width="40px" />
               </a>
               <a
-                href="https://www.linkedin.com/techstylers/"
+                href="https://www.facebook.com/techstylers/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
               >
-              <img src={facebook} alt="Facebook" width="40px" />
+                <img src={facebook} alt="Facebook" width="40px" />
               </a>
               <a
                 href="https://x.com/Tech_Stylers"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
               >
-              <img src={twitter} alt="Twitter" width="40px" />
+                <img src={twitter} alt="Twitter" width="40px" />
               </a>
             </div>
           </div>
