@@ -26,5 +26,12 @@ export const articleData = [
         readTime: "3 mins read",
         title: "Biggest success stories of women in the world of tech",
         published: "Jan 1, 2023",
-    }
+    },
+    {
+        id: 5,
+        tag: "Career Advice",
+        readTime: "7 mins read",
+        title: "How to Choose a Tech Career in 2022 – A Career Changer's Guide",
+        published: "May 30, 2024",
+    },
 ]
